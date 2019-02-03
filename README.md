@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This file uses docker to create a development environment. Key components are:
+
+- Dockerfile.dev : contains build process to use for development image
+- docker-compose.yml : used for an easy shortcut to launching image with file associations and port mapping
+
+## Starting the project using docker
+
+just type `docker-compose up`
+
 ## Available Scripts
 
 In the project directory, you can run:
