@@ -9,6 +9,14 @@ This file uses docker to create a development environment. Key components are:
 
 just type `docker-compose up`
 
+## Testing
+
+1. `docker ps` and get container id
+2. `docker exec -it <container-id> sh
+3. type `npm run test` into shell to get interactive test
+
+Note: you need to hit <enter> in test shell to get them to refresh as watch is not working
+
 ## Available Scripts
 
 In the project directory, you can run:
