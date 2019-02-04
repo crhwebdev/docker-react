@@ -5,7 +5,7 @@
 # Build step
 FROM node:alpine as builder
 WORKDIR '/app'
-COPY package.json .
+COPY package*.json .
 RUN npm install
 COPY . .
 # BUG!: need to install new version of terser so that react-scripts build works!
