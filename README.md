@@ -5,9 +5,9 @@ This file uses docker to create a development environment. Key components are:
 - Dockerfile.dev : contains build process to use for development image
 - docker-compose.yml : used for an easy shortcut to launching image with file associations and port mapping
 
-## Starting the project using docker
+## Development
 
-just type `docker-compose up`
+To run in dev mode, just type `docker-compose up`
 
 ## Testing
 
@@ -16,6 +16,13 @@ just type `docker-compose up`
 3. type `npm run test` into shell to get interactive test
 
 Note: you need to hit <enter> in test shell to get them to refresh as watch is not working
+
+## Deploy
+
+1. Type `docker build .`
+2. Run container using `docker run <image_id>`
+
+Project runs on port 8080
 
 ## Available Scripts
 
