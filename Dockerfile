@@ -14,5 +14,7 @@ RUN npm run build
 
 # Run step
 FROM nginx
+# Needed to expose ports when deploying to services like aws
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 
